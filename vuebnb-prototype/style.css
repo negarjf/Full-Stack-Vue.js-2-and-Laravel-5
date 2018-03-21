@@ -37,6 +37,7 @@ body {
 
 .heading {
   margin-bottom: 2em;
+
 }
 
 .heading h1 {
@@ -70,10 +71,37 @@ hr {
 }
 
 .header .header-img {
-  background-size: cover;
   background: #f5f5f5 no-repeat 50% 50%;
+  background-size: cover;
   height: 100%;
+  cursor: pointer;
+  position: relative;
 }
+
+.header .header-img .view-photos {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+button {
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 1.43;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  background: white;
+  color: #484848;
+  padding: 7px 18px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
 
 .list {
   display: flex;
@@ -111,4 +139,61 @@ hr {
   .list .list-item {
     flex: 0 0 100%;
   }
+}
+
+.about p.contracted {
+  height: 250px;
+  overflow: hidden;
+}
+
+button {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.about button.more {
+  background: transparent;
+  border: 0;
+  color: #008489;
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.about button.more:hover,
+.about button.more:focus,
+.about button.more:active {
+  text-decoration: underline;
+  outline: none;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+#modal.show{
+  display: block;
+}
+
+.modal-content {
+  height: 100%;
+  max-width: 105vh;
+  padding-top: 12vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
 }

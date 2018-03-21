@@ -9,7 +9,9 @@ let app = new Vue({
 			'background-image': 'url(sample/header.jpg)'
 		},
 		amenities: sample.amenities,
-		prices: sample.prices
+		prices: sample.prices,
+		contractedData: true,
+		modalOpen: false,
 
 	}
 });
